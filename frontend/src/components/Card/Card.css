@@ -1,0 +1,524 @@
+/* .card-container {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 3rem;
+}
+
+.card-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-left: 10px;
+}
+
+.profile-image-card {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgb(252, 163, 9);
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.username {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #444;
+  cursor: pointer;
+}
+
+.date {
+  color: #666;
+  font-size: 0.8em;
+}
+
+.card-content {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.location,
+.sub-location {
+  margin-left: 5px;
+}
+
+.location {
+  font-size: 1.2em;
+  color: rgb(228, 121, 0);
+  font-weight: 600;
+}
+
+.sub-location {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.description {
+  font-size: 0.8em;
+  color: #666;
+  margin: 8px 5px;
+}
+
+.add-to-favorites {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  border: 1px solid orange;
+  font-weight: 600;
+  color: orange;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: rgb(253, 248, 242);
+}
+
+.add-to-favorites:hover {
+  background-color: orange;
+  color: white;
+}
+
+.add-to-favorites.favorite {
+  background-color: orange;
+  color: #fff;
+}
+
+.location-button {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  width: 25px;
+  height: 25px;
+  border: 1px solid orange;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: orange;
+  fill: white;
+  padding: 2px;
+}
+
+.location-button:hover {
+  background-color: rgb(239, 157, 4);
+  fill: #fff;
+}
+
+.e-d-btn {
+  position: absolute;
+  border: 1px solid orange;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: white;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: orange;
+  border: none;
+}
+
+.e-d-btn.edit-button {
+  top: 241px;
+  width: 23.5px;
+  height: 23.5px;
+  right: 38px;
+}
+
+.e-d-btn.delete-button {
+  top: 240px;
+  width: 26px;
+  height: 26px;
+  right: 10px;
+}
+
+.e-d-btn:hover {
+  background-color: orange;
+  fill: #fff;
+}
+
+
+.popup-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; 
+}
+
+
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.popup-content button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+} */
+
+/* .card-container {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 3rem;
+  height: 400px; 
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  gap: 15px;
+}
+
+.profile-image-card {
+  width: 50px; 
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgb(252, 163, 9);
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.username {
+  font-size: 1em;
+  font-weight: 600;
+  color: #444;
+  cursor: pointer;
+  margin: 0;
+}
+
+.date {
+  color: #666;
+  font-size: 0.8em;
+  margin: 0;
+}
+
+.main-image {
+  width: 100%;
+  height: 180px; 
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-content {
+  padding: 10px;
+  flex: 1; 
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.location,
+.sub-location {
+  margin-left: 5px;
+}
+
+.location {
+  font-size: 1.2em;
+  color: rgb(228, 121, 0);
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.sub-location {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+  margin: 5px 0;
+}
+
+.description {
+  font-size: 0.8em;
+  color: #666;
+  margin: 8px 0;
+  overflow: hidden;
+}
+
+.add-to-favorites {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  border: 1px solid orange;
+  font-weight: 600;
+  color: orange;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: rgb(253, 248, 242);
+}
+
+.add-to-favorites:hover {
+  background-color: orange;
+  color: white;
+}
+
+.add-to-favorites.favorite {
+  background-color: orange;
+  color: #fff;
+}
+
+.location-button {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  width: 25px;
+  height: 25px;
+  border: 1px solid orange;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: orange;
+  fill: white;
+  padding: 2px;
+}
+
+.location-button:hover {
+  background-color: rgb(239, 157, 4);
+  fill: #fff;
+}
+
+.delete-button,
+.edit-button {
+  position: absolute;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: white;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: orange;
+}
+
+.delete-button {
+  top: 10px;
+  right: 10px;
+  width: 26px;
+  height: 26px;
+}
+
+.edit-button {
+  top: 10px;
+  right: 40px;
+  width: 23px;
+  height: 23px;
+}
+
+.delete-button:hover,
+.edit-button:hover {
+  background-color: orange;
+  fill: #fff;
+}
+
+.popup-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.popup-content button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+} */
+/* Card.css */
+
+/* Style for the card container */
+.card-container {
+  position: relative;
+  overflow: hidden; /* Ensure content doesn't overflow */
+  border-radius: 8px; /* Optional: Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow for better visual appeal */
+  background-color: #fff; /* Optional: Background color */
+  height: 450px;
+}
+
+/* Style for the image slider */
+.image-slider {
+  position: relative;
+  width: 100%;
+  height: 200px; /* Set a fixed height for the slider */
+  overflow: hidden; /* Hide overflow to keep images within the container */
+}
+
+/* Style for the images within the slider */
+.slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the container while maintaining aspect ratio */
+  display: block; /* Ensure images are displayed as block elements */
+}
+
+/* Other styles */
+.card-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f5f5f5; /* Optional: Background color */
+}
+
+.profile-image-card {
+  width: 50px; /* Set a fixed size for profile image */
+  height: 50px;
+  border-radius: 50%; /* Circle profile image */
+  object-fit: cover; /* Ensure profile image covers the container */
+}
+
+.user-info {
+  margin-left: 10px;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.date {
+  color: #888;
+}
+
+/* Modal styles */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 800px;
+}
+
+.modal-slider {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Set a fixed height for the modal slider */
+}
+
+/* Style for the images within the modal slider */
+.modal-slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the container while maintaining aspect ratio */
+  display: block; /* Ensure images are displayed as block elements */
+}
+
+/* Close button styles */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Container for the description */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+/* Style for the description text */
+.description {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Show only 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 10px;
+}
+
+/* Style for the read more button */
+.read-more {
+  color: #007bff; /* Link color */
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 14px;
+  text-align: left;
+}
+
+/* Style for the full description */
+.full-description {
+  display: none; /* Hide by default */
+}

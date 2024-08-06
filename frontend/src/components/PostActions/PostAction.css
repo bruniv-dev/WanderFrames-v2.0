@@ -1,0 +1,16 @@
+.postActions-header {
+  background-color: white;
+  border-bottom: 1px solid rgb(226, 223, 223);
+}
+
+.postActions-logo {
+  color: black;
+}
+
+.postActions-nav a {
+  color: black;
+}
+
+.postActions-signin {
+  color: black;
+}

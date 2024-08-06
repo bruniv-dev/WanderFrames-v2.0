@@ -1,0 +1,98 @@
+.profile-header {
+  background-color: white;
+  border-bottom: 1px solid rgb(226, 223, 223);
+}
+
+.profile-logo {
+  color: black;
+}
+
+.profile-nav a {
+  color: black;
+}
+
+.profile-signin {
+  color: black;
+}
+
+.profile-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.profile-details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.profile-info p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.posts-section {
+  margin-top: 20px;
+}
+
+.posts-section h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.profile-header-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.profile-header-buttons button {
+  display: inline-block; /* Ensure buttons are visible */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.profile-edit-button {
+  background-color: #007bff;
+}
+
+.profile-delete-button {
+  background-color: #dc3545;
+}
+
+.reset-password-button {
+  background-color: #28a745; /* Color for reset password button */
+}
+
+.profile-edit-button:hover,
+.profile-delete-button:hover,
+.reset-password-button:hover {
+  background-color: #0056b3;
+}
+
+.profile-header-buttons .reset-password-button {
+  background-color: #28a745; /* Ensure reset password button has a distinct color */
+}

@@ -1,0 +1,57 @@
+/* User Card Container */
+.user-card-container {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 16px;
+  padding: 16px;
+  background-color: #fff;
+  position: relative;
+  width: 300px;
+}
+
+/* Profile Picture */
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+/* User Card Content */
+.user-card-content {
+  padding: 8px 0;
+}
+
+.username {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.joined,
+.email {
+  font-size: 14px;
+  color: #555;
+}
+
+.bio {
+  font-size: 14px;
+  color: #333;
+  margin-top: 8px;
+}
+
+/* Admin Delete Button */
+.admin-delete-button {
+  background-color: #f8d7da;
+  border: none;
+  color: #e74c3c;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 4px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
