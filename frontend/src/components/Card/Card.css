@@ -522,3 +522,7 @@
 .full-description {
   display: none; /* Hide by default */
 }
+
+* {
+  color: #000;
+}
